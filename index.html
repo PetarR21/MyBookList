@@ -10,43 +10,42 @@
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
     <div class="container mt-4">
-        <h1 class="display-4 text-center">
-            <i class="fas fa-book-open text-primary"></i>
-            My<span class="text-primary">Book</span>List
-        </h1>
+        <h1 class="display-4 text-center mb-5"><i class="fas fa-book-open text-primary"></i>My<span
+                class="text-primary">Book</span>List</h1>
         <form id="book-form">
-            <div class="form-group mt-4">
-                <label for="title">Title</label>
-                <input type="text" id="title" class="form-control">
+            <div class="form-group mb-3">
+                <label for="title" class="mb-2">Title</label>
+                <input type="text" class="form-control" id="title" required>
             </div>
-            <div class="form-group mt-4">
-                <label for="author">Author</label>
-                <input type="text" id="author" class="form-control">
+            <div class="form-group mb-3">
+                <label for="author" class="mb-2">Author</label>
+                <input type="text" class="form-control" id="author" required>
             </div>
-            <div class="form-group mt-4">
-                <label for="isbn">ISBN#</label>
-                <input type="text" id="isbn" class="form-control">
+            <div class="form-group mb-3">
+                <label for="isbn" class="mb-2">ISBN#</label>
+                <input type="text" class="form-control" id="isbn" required>
             </div>
-            <input type="submit" value="Add Book" class="btn btn-primary btn-block form-control mt-4">
+            <input type="submit" value="Add book" class="btn btn-primary input-block-level form-control">
         </form>
         <table class="table table-striped mt-5">
             <thead>
                 <tr>
                     <th>Title</th>
                     <th>Author</th>
-                    <th>ISBN</th>
+                    <th>ISBN#</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody id="book-list">
-
             </tbody>
         </table>
     </div>
+
 </body>
 
 </html>
